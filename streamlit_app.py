@@ -1,5 +1,4 @@
 import streamlit
-snowflake-connector-python[pandas]
 
 streamlit.title('My Parents New HealthyDiner')
 
