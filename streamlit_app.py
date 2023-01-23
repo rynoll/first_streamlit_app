@@ -32,7 +32,6 @@ my_data_rows = my_cur.fetchall()
 streamlit.text("The fruit load list contains:")
 streamlit.text(my_data_rows)
 
-
-# Let's put a pick list here so they can pick the fruit they want to include 
-fruits_selected2 = streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index),['Avocado','Strawberries'])
-fruits_to_show = my_fruit_list.loc[fruits_selected]
+streamlit.write('Thanks for adding ', add_my_fruit)
+#this will not work
+my_cur.execute("insert into fruit_load_list values ('from streamlit')")
